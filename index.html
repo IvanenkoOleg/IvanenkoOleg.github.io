@@ -1,100 +1,97 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!DOCTYPE HTML>
+<html>
 <head>
-	<!-- Важная техническая информация для браузера -->
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width initial-scale=1">
-	<!-- Информация об авторе и описании проекта -->
-	<meta name="description" content="Сайт за 3 дня">
-	<meta name="author" content="Олег Иваненко">
-	<!-- Иконка, которая буде отображатся на вкладке браузера -->
-	<link rel="icon" href="img/favicon.ico">
-	<title>Сайт за 3 дня</title>
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+<meta charset="utf-8"> 
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+<title>Blog</title>
 </head>
+
 <body>
 	<header>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-7">
-				<img class="header-img" src="img/main-img.png" alt="Монитор">
-			</div>
-			<!-- /.col-7 -->
-			<div class="col-lg-5">
-				<p class="header-pretitle">Веб-разработчик</p>
-				<h1 class="header-title">Олег Иваненко</h1>
-				<p class="header-text">Верстка на HTML/CSS <br>Разработка сайтов под ключ</p>
-				<div class="header-button-block">
-					<a href="https://vk.me/id196306966" class="header-button">Связаться</a>
-					<small>*Это бесплатно</small>
-				</div>
-			</div>
-			<!-- /.col-5 -->
+		<div class="center-block-main">
+			<a href="#"><img src="img/logo.jpg" alt="Blogin" class="logo"></a>
+			<nav>
+				<ul class="menu">
+					<li><a href="#">Journal</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Work</a></li>
+					<li><a href="#">Contact</a></li>
+					
+				</ul>
+			</nav>
 		</div>
-		<!-- /.row -->
-	</div>
-	<!-- /.container -->
 	</header>
+	<div class="center-block-main content">
+	<main>
+		<article>
+			<header>
+				<img src="img/img1.jpg" alt="">
+			</header>
+				<h2>Duis aute irure dolor in henderit in voluptate.</h2>
+				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipop ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
 
-	<section class="portfolio">
-		<div class="container">
-			<div class="portfolio-block">
-				<h2 class="portfolio-title">Портфолио</h2>
-				<p class="portfolio-subtitle">Мои работы</p>
-				<div class="row">
-				<div class="col-md-6">
-					<div class="portfolio-col-1">
-					<img src="img/portfolio-gazprom.png" alt="Гаспром">
-					<h3>внутренний университет «Газпром нефти»</h3>
-					<p class="portfolio-text">У «Газпром нефти» есть внутренний Корпоративный университет для сотрудников. Это настоящий университет, где сотрудники проходят обучение у внутренних тренеров компании или у специально приглашенных лекторов и экспертов....</p>
-					<a href="#">Смотреть работу</a>
-					</div>
-				</div>
-				<!-- /.col-6 -->
-				<div class="col-md-6">
-					<div class="portfolio-col-2">
-					<img src="img/portfolio-piece.png" alt="Мир">
-					<h3>Сайт платежной системы «Мир»</h3>
-					<p class="portfolio-text">Обновленная версия сайта знакомит посетителей с компаниями, уже принимающими карты к оплате, и приглашает всех остальных присоединиться к проекту...</p>
-					<a href="#">Смотреть работу</a>
-					</div>
-				</div>
-			</div>
-			
-				<!-- /.col-6 -->
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+				<p><a href="#" class="more">Continue Reading</a></p>
+		</article>
+		<article>
+				<header>
+				<img src="img/img2.jpg" alt="">
+			</header>
+				<h2>Duis aute irure dolor in henderit in voluptate.</h2>
+				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipop ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+				<p><a href="#" class="more">Continue Reading</a></p>
+				
+		</article>
+	</main>
+	<aside>
+		<div class="widget">
+			<h2>Search</h2>
+			<form action="" method="get">
+				<input type="search" class="search" placeholder="What are you looking for?" >
+			</form>
+		</div>
+
+		<div class="widget">
+			<h2>Categories</h2>
+			<nav>
+				<ul>
+					<li><a href="#">Weekend</a></li>
+					<li><a href="#">Nature</a></li>
+					<li><a href="#">Work</a></li>
+					<li><a href="#">Holiday</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="widget">
+			<h2>Stay tuned.</h2>
+			<div class="subscribe">
+				<form action="" method="get"> 
+					<input type="email" placeholder="Your email" class="subscribe-input">
+					<input type="image" src="img/sbcr-btn.jpg" class="subscribe-img">
+				</form>
 			</div>
 		</div>
-	</section>
 
+		<div class="widget">
+		 <img src="img/banner.jpg" alt="">
+		</div>
+	</aside>
+	<div class="clr"></div>
+		<div class="pager clearfix">
+			<p class="previous-link">&larr; <a href="#">Previous</a></p>
+			<p class="next-link"><a href="#">Next &rarr;</a></p>
+		</div>
+	</div>
 	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-				<h4 class="footer-author">Олег Иваненко</h4>
-				<p class="footer-text">Разработка сайтов под ключ</p>
-				</div>
-				<div class="col-md-4">
-				<div class="social-block">
-					<p>Подпишитесь</p>
-					<a href="https://www.facebook.com/oleg.ivanenko.71?ref=bookmarks"><img src="img/socials/facebook.png" alt="facebook"></a>
-					<a href="https://t.me/OlegIvanenko"><img src="img/socials/telegram.png" alt="telegram"></a>
-					<a href="https://vk.com/id196306966"><img src="img/socials/vk.png" alt="vk"></a>
-					<a href="https://www.youtube.com/channel/UCEbcZ9AnwK1F40dQuXfdn9w?view_as=subscriber"><img src="img/socials/youtube.png" alt="youtube"></a>
-				</div>
-				</div>
-				<div class="col-md-4">
-					<div class="footer-cta-block">
-					<p class="footer-cta">Напишите мне:</p>
-					<a href="mailto:1xpym1@gmail.com" class="footer-button">Написать:</a>
-					</div>
-				</div>
-			</div>
-		<!-- /.container -->
+		<div class="center-block-main">
+			<a href=""><img src="img/logo-ftr.jpg" alt=""></a>
+			<p>&copy; 2016 Blogin.com  -  All Rights Reserved  -  Find more free Templates at <b>Pixelhint.com</b></p>
 		</div>
 	</footer>
-
 </body>
 </html>
