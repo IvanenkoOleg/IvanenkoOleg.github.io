@@ -123,13 +123,14 @@ header{
 .menu li a:hover{
 	color:#58c93a;
 	border-bottom: 3px solid #58c93a;
+	transition: 0.3s;
 }
 .content{
 	border-left:1px solid #e1e0e0;
 	border-right:1px solid #e1e0e0;
 }
 main{
-	float: left;
+	float: left ;
 	width: 62.5%;
 	margin-top: 70px;
 
@@ -141,7 +142,26 @@ main{
 		font-size: 0;
 		background: none;
 		margin-bottom: 10px;
+		position: relative;
 	}
+	.publish{
+		font-size: 13px;
+		background:rgba(0,0,0,0.4);
+		color:#fff;
+		position: absolute;
+		bottom: 0;
+		padding: 5px;
+		border-radius: 0 20px 0px 0;
+		bottom:-28px;
+	}
+		article>header:hover .publish{
+			bottom: 0;
+			transition: all linear 0.2s ;
+		}
+		article>header:not(:hover) .publish{
+			bottom: -28px;
+			transition: linear 0.2s ;
+		}
 	article>h2{
 		font-size: 1.75em;
 		font-weight: 700;
@@ -159,10 +179,15 @@ main{
 		border-radius: 25px;
 		padding: 7px 20px;
 		display: inline-block;
+		text-decoration: none;
 	}
-	a.more:hover{
+	a:hover.more{
 		color: #339933;
 		border-color: #393;
+		-webkit-transition:0.2s linear;
+		-o-transition:0.2s linear;
+		-moz-transition:0.2s linear;
+		transition:0.2s linear;
 	}
 aside{
 	float: right;
@@ -192,6 +217,10 @@ aside{
 .widget>nav{
 	margin-left: 23px;
 }
+.subscribe{
+	position: relative;
+	height: 42px;
+}
 .subscribe-input{
 	color: #b9b9b9;
 	font-size: 0.75em;
@@ -202,10 +231,6 @@ aside{
 	box-sizing: border-box;
 	position: absolute;
 	top: 0; left: 0;
-}
-.subscribe{
-	position: relative;
-	height: 42px;
 }
 .subscribe-img{
 	position: absolute;
@@ -237,10 +262,51 @@ footer{
 	background: #f8f8f8;
 	text-align: center;
 	padding: 50px 0px;
+	font-size: 0.8125em;
 }
 	footer img{
 		margin-bottom: 20px;
 	}
-	footer p{
-		font-size: 0.8125em;
+@media (max-width: 768px) {
+	
+	.logo{
+		padding-top: 10px;
 	}
+	.menu li a{
+		padding: 25px 35px;
+	}
+	main{
+		float: none;
+		width: 100%;
+		margin-top: 30px;
+	}
+	article>header img{
+		width: 100%;
+	}
+	aside{
+		float: none;
+		width: 100%;
+	}
+}
+@media (max-width: 715px) {
+	.menu li{
+		margin-right: 5px;
+	}
+	.menu li a{
+		padding: 25px 15px;
+	}
+}
+@media (max-width: 500px) {
+	.logo{
+		float: none;
+		margin: 0 auto;
+		display: block;
+	}
+	.menu{
+		float: none;
+		width: 100%;
+	}
+	.menu li a{
+		padding: 10px 10px;
+	}
+}
